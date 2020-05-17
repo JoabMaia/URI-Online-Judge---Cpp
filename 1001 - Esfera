@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+
+using namespace std;
+
+# define pi 3.14159
+
+double calcularVolEsfera(double raio);
+
+int main() {
+
+  double raio, resultado;
+
+  cout << fixed << setprecision(3);
+
+  cin >> raio;
+
+  resultado = calcularVolEsfera(raio);
+
+  cout << "VOLUME = " << resultado << fixed << setprecision(3) << endl;
+  
+  return 0;
+  
+}
+
+double calcularVolEsfera(double raio){
+  return (4*pi*pow(raio,3))/3;
+}
