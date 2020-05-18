@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+  int codPec1, numPec1, codPec2, numPec2;
+  double valorUnitpec1, valorUnitpec2, valorTotal;
+  
+  cout << fixed << setprecision(2);
+  
+  cin >> codPec1 >> numPec1 >> valorUnitpec1;
+  cin >> codPec2 >> numPec2 >> valorUnitpec2;
+
+  valorTotal = (numPec1 * valorUnitpec1) + (numPec2*valorUnitpec2);
+
+  cout << "VALOR A PAGAR: R$ " << valorTotal << fixed << setprecision(2) << endl;
+
+  return 0;
+}
