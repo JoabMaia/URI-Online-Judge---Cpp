@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+double calculaSalario(int numHorTra, double valHorTra){
+  return numHorTra * valHorTra;
+}
+int main(){
+    
+    int numFunc, numHorTra;
+    double valHorTra, salario;
+
+    cin >> numFunc >> numHorTra;
+    cout << fixed << setprecision(2);
+    cin >> valHorTra;
+    salario = calculaSalario(numHorTra, valHorTra);
+
+    cout << "NUMBER = " << numFunc << endl;
+    cout << "SALARY = U$ " << salario << fixed << setprecision(2) << endl;
+
+    return 0;
+}
