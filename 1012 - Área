@@ -1,0 +1,52 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+
+using namespace std;
+
+#define PI 3.14159
+
+double areaTriangulo(double A, double C);
+double areaCirculo(double C);
+double areaTrapezio(double A, double B, double C);
+double areaQuadrado(double B);
+double areaRetangulo(double A, double B);
+
+int main(){
+  double A, B, C;
+
+  cout << fixed << setprecision(3);
+
+  cin >> A >> B >> C;
+
+  cout << "TRIANGULO: " << areaTriangulo(A, C) << fixed << setprecision(3) << endl;
+
+  cout << "CIRCULO: " << areaCirculo(C) << fixed << setprecision(3) << endl;
+
+  cout << "TRAPEZIO: " << areaTrapezio(A, B,C) << fixed << setprecision(3) << endl;
+
+  cout << "QUADRADO: " << areaQuadrado(B) << fixed << setprecision(3) << endl;
+
+  cout << "RETANGULO: " << areaRetangulo(A, B) << fixed << setprecision(3) << endl;
+
+}
+
+double areaTriangulo(double A, double C){
+  return A*C/2;
+}
+
+double areaCirculo(double C){
+  return PI * pow(C, 2);
+}
+
+double areaTrapezio(double A, double B, double C){
+  return (A+B)*C/2;
+}
+
+double areaQuadrado(double B){
+  return pow(B, 2);
+}
+
+double areaRetangulo(double A, double B){
+  return A*B;
+}
