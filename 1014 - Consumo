@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+  int x;
+  double y;
+
+  cin >> x;
+  cout << fixed << setprecision(3);
+  cin >> y;
+
+  cout << x/y << fixed << setprecision(3) << " km/l" << endl;
+
+  return 0;
+}
