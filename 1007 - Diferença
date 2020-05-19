@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int diferenca(int A,int B,int C,int D){
+  return (A*B - C*D);
+}
+int main() {
+  int A,B,C,D, resultado;
+
+  cin >> A >> B >> C >> D;
+
+  resultado = diferenca(A,B,C,D);
+
+  cout << "DIFERENCA = " << resultado << endl;
+}
