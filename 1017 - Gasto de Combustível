@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+double calculaEspaco(double velocidadeMedia, double tempo);
+ 
+int main() {
+ 
+    int tempo, velocidadeMedia;
+    double espaco, quantLitros;
+
+    cin >> tempo >> velocidadeMedia;
+
+    cout << fixed << setprecision(3);
+
+    espaco = calculaEspaco(velocidadeMedia, tempo);
+
+    quantLitros = espaco / 12;
+    
+    cout << quantLitros << fixed << setprecision(3) << endl;
+ 
+    return 0;
+
+}
+
+double calculaEspaco(double velocidadeMedia, double tempo){
+  return velocidadeMedia*tempo;
+}
