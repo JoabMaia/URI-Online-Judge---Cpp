@@ -1,0 +1,15 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int tempoDuracao;
+    
+    cin >> tempoDuracao;
+    
+    cout << tempoDuracao/3600 << ":" << (tempoDuracao%3600)/60 << ":" << tempoDuracao%60 << endl;
+ 
+    return 0;
+    
+}
