@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+void insertionSort(int *arr, int size);
+
+int main() {
+  int n1, n2, n3, vet[3], vet1[3];
+
+  cin >> n1 >> n2 >> n3;
+
+  vet[0] = n1;
+  vet1[0] = n1;
+  vet[1] = n2;
+  vet1[1] = n2;
+  vet[2] = n3;
+  vet1[2] = n3;
+
+  insertionSort(vet, 3);
+
+  for(int i=0; i<3; i++){
+    cout << vet[i] << endl;
+  }
+
+  cout << endl;
+
+  for(int i=0; i<3; i++){
+    cout << vet1[i] << endl;
+  }
+
+}
+
+void insertionSort(int *arr, int size){
+  int x, y, value;
+
+  for(x=1; x<size; x++){
+    value = arr[x];
+
+    for(y=x-1; y>=0 && arr[y]>value; y--){
+      arr[y+1] = arr[y];
+    }
+    arr[y+1] = value;
+  }
+}
