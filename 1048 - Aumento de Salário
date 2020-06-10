@@ -1,0 +1,59 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+  double valor, nsalario, reajuste;
+
+  cout << fixed << setprecision(2);
+  
+  cin >> valor;
+
+  if(valor >= 0 && valor <=400.00){
+    nsalario = valor * 1.15;
+    reajuste = valor * 0.15;
+
+    cout << "Novo salario: " << nsalario << fixed << setprecision(2) << endl;
+    cout << "Reajuste ganho: " << reajuste << fixed << setprecision(2) << endl;
+    cout << "Em percentual: 15 %" << endl;
+  }
+
+  else if(valor > 400.00 && valor <=800.00){
+    nsalario = valor * 1.12;
+    reajuste = valor * 0.12;
+
+    cout << "Novo salario: " << nsalario << fixed << setprecision(2) << endl;
+    cout << "Reajuste ganho: " << reajuste << fixed << setprecision(2) << endl;
+    cout << "Em percentual: 12 %" << endl;
+  }
+
+  else if(valor > 800.00 && valor <=1200.00){
+    nsalario = valor * 1.10;
+    reajuste = valor * 0.10;
+
+    cout << "Novo salario: " << nsalario << fixed << setprecision(2) << endl;
+    cout << "Reajuste ganho: " << reajuste << fixed << setprecision(2) << endl;
+    cout << "Em percentual: 10 %" << endl;
+  }
+
+  else if(valor > 1200.00 && valor <=2000.00){
+    nsalario = valor * 1.07;
+    reajuste = valor * 0.07;
+
+    cout << "Novo salario: " << nsalario << fixed << setprecision(2) << endl;
+    cout << "Reajuste ganho: " << reajuste << fixed << setprecision(2) << endl;
+    cout << "Em percentual: 7 %" << endl;
+  }
+
+  else if(valor > 2000.00){
+    nsalario = valor * 1.04;
+    reajuste = valor * 0.04;
+
+    cout << "Novo salario: " << nsalario << fixed << setprecision(2) << endl;
+    cout << "Reajuste ganho: " << reajuste << fixed << setprecision(2) << endl;
+    cout << "Em percentual: 4 %" << endl;
+  }
+
+  return 0;
+}
