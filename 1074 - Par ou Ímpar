@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int quant_val, num;
+
+    cin >> quant_val;
+
+    for (int i = 0; i < quant_val; ++i)
+    {
+        cin >> num;
+
+        if(num == 0){
+            cout << "NULL" << endl;
+        }else if(num % 2 == 0){
+            if(num > 0){
+                cout << "EVEN POSITIVE" << endl;
+            }else{
+                cout << "EVEN NEGATIVE" << endl;
+            }
+
+        }else{
+            if(num > 0){
+                cout << "ODD POSITIVE" << endl;
+            }else{
+                cout << "ODD NEGATIVE" << endl;
+            }
+
+        }
+    }
+
+    return 0;
+}
