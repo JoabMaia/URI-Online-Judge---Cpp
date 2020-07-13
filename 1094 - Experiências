@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  char t;
+  int n, c, r,  s, soma, e;
+
+  c=0;
+  r=0;
+  s=0;
+  soma=0;
+
+  cin >> n;
+
+  while(n--){
+    cin >> e >> t;
+    soma += e;
+    if (t == 'C'){
+      c += e;
+    } else if (t == 'R'){
+      r += e;
+    } else if (t == 'S'){
+      s += e;
+    }
+  }
+    cout << "Total: " << soma << " cobaias\n";
+    cout << "Total de coelhos: " << c << "\n";
+    cout << "Total de ratos: " << r << "\n";
+    cout << "Total de sapos: " << s << "\n";
+    printf("Percentual de coelhos: %.2f %\n", ((float)c/(float)soma)*100.00);
+    printf("Percentual de ratos: %.2f %\n", ((float)r/(float)soma)*100.00);
+    printf("Percentual de sapos: %.2f %\n", ((float)s/(float)soma)*100.00);
+
+    return 0;
+}
