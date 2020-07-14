@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int incre=3, decre=5, i=1, j=60;
+
+  for(int e=0; e<13; e++){
+    cout << "I=" << i << " " << "J=" << j << endl;
+    i += incre;
+    j -= decre;
+
+    if(j < 0){
+      break;
+    }
+  }
+  
+  return 0;
+}
