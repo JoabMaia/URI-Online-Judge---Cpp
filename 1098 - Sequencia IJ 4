@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+  int contImp=0, vet[3] = {1, 2, 3};
+  
+  for(float i=0; i<22; i++){
+      if(contImp < 3){
+        while(contImp < 3){
+          if(i == 0){
+            cout << "I=" << i << " " << "J=" << vet[contImp] << endl;
+            contImp += 1;
+          }
+          if(i > 0){
+            cout << "I=" << i/10 << " " << "J=" << vet[contImp] + (i/10) << endl;
+            contImp += 1;
+          }
+          }
+      }
+      else if(contImp == 3){
+        contImp -= 3;
+      }
+      if(i == 9 && contImp == 3){
+        break;
+      }
+  }
+
+  return 0;
+}
