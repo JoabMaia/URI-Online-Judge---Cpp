@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+  double nota, cont_media=0, cont_quant=0;
+
+  while(true){
+
+    cin >> nota;
+
+    if(nota < 0 || nota > 10){
+      cout << "nota invalida" << endl;
+      continue;
+    }
+
+    if(nota >= 0 and nota <= 10){
+      cont_media += nota;
+      cont_quant += 1;
+    }
+
+    if(cont_quant == 2){
+      cout << "media = " << cont_media/cont_quant << fixed << setprecision(2) << endl;
+      break;
+    }
+
+  }
+
+  return 0;
+}
