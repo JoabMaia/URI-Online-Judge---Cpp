@@ -1,0 +1,45 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main(){
+    
+    float nota, cont_nota=0, z=0, n=0;
+
+
+    while(true){
+      cin >> nota;
+      if(n == 1){
+                     
+      if(nota == 2){
+        break;
+      }else if(nota == 1){
+        n = 0;
+        continue;
+      }
+      else{
+        cout << "novo calculo (1-sim 2-nao)\n";
+        continue;
+      }
+      }else{
+        if(nota < 0 || nota > 10){
+          cout << "nota invalida\n";
+        }
+        else if(z == 0){
+          cont_nota = nota;
+          z = 1;
+        }
+        else{
+          printf("media = %.2f\n", (nota+cont_nota)/2.00);
+          z = 0;
+          n = 1;
+        }
+      }
+                
+      if(n == 1) cout << "novo calculo (1-sim 2-nao)\n";
+                     
+    }    
+    
+    return 0;    
+}
