@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  
+  int prod, cont_Alc=0, cont_Gas=0, cont_Die=0;
+
+  while(true){
+
+    cin >> prod;
+
+    if(prod == 1){
+      cont_Alc+=1;
+      continue;
+    }
+    else if(prod == 2){
+      cont_Gas+=1;
+      continue;
+    }
+    else if(prod == 3){
+      cont_Die+=1;
+      continue;
+    }
+    else if(prod == 4){
+      break;
+    }
+    else{
+      continue;
+    }
+  }
+
+  cout << "MUITO OBRIGADO" << endl;
+  cout << "Alcool: " << cont_Alc << endl;
+  cout << "Gasolina: " << cont_Gas << endl;
+  cout << "Diesel: " << cont_Die << endl;
+
+  return 0;
+}
