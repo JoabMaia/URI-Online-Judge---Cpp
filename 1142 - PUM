@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int num, val1=0, val2=1, val3=2;
+
+  cin >> num;
+
+  for(int i=0; i<num; i++){
+      val1+=1;
+      val2+=1;
+      val3+=1;
+
+      cout << val1 << " " << val2 << " " << val3 << " " << "PUM" << endl;
+
+      val1+=3;
+      val2+=3;
+      val3+=3;
+  }
+  
+  return 0;
+}
