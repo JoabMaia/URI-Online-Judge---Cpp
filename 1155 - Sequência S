@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+  double num,som=0;
+
+  cout << fixed << setprecision(2);
+
+  for(float i=1; i<=100; i++){
+    som += 1/i;
+  }
+  
+  cout << som << fixed << setprecision(2) << endl;
+
+  return 0;
+}
