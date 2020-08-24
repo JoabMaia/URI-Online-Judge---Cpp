@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, X, Y,soma;
+    
+    cin >> n;
+    
+    for(int i = 0; i < n; i++){
+      cin >> X;
+      cin >> Y;
+            
+      soma = 0;
+            
+      if(X%2 != 0){
+        soma+=X;
+      }
+      else{
+        X+=1;
+        soma += X;
+      }
+            
+      for(int i=0; i < Y-1; i++){
+        X += 2; 
+        soma += X;           
+      }
+            
+      cout << soma << endl;
+    }
+
+    return 0;
+}
