@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+  int num, cont=0, som=0;
+
+  cin >> num;
+
+  while(num!=0){
+    if(num!=0 && cont<5){
+      while(cont < 5){
+      if(num%2 == 0){
+        som += num;
+        cont++;
+        num++;
+        continue;
+      }
+      else{
+        num++;
+        continue;
+        }
+      }
+    }
+    else if(cont==5){
+      cout << som << endl;
+      som = 0;
+      cont = 0;
+      cin >> num;
+      continue;
+    }   
+  }
+
+  return 0;
+}
