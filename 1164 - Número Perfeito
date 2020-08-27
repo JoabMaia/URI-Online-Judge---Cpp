@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int num, valor, som=0;
+
+  cin >> num;
+
+  for(int i=1; i<=num; i++){
+
+    cin >> valor;
+
+    for(int i=1;i<valor;i++){
+      if(valor%i == 0){
+        som+=i;
+      } 
+    }
+    if(som == valor){
+      cout << valor << " eh perfeito" << endl;
+      som=0;
+    }
+    else if(som != valor){
+      cout << valor << " nao eh perfeito" << endl;
+      som=0;
+    }
+  }
+
+  return 0;
+}
