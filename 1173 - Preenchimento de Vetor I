@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int num, vet[10], valor, cont;
+
+  cin >> num;
+
+  for(int i=0; i<10; i++){
+    valor = num;
+    if(i == 0){
+      vet[i] = num;
+    }
+    else if(i > 0){
+      cont = valor*2;
+      vet[i] = cont;
+      num = cont;
+    }  
+    
+    cout << "N[" << i << "] = " << vet[i] << endl;
+  }
+  
+  return 0;
+}
