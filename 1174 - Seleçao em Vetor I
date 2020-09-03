@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+  float val, A[100];
+
+  cout << fixed << setprecision(1);
+
+  for(int i=0; i<100; i++){
+    cin >> val;
+
+    if(val <= 10){
+      A[i] = val;
+      cout << "A[" << i << "] = " << A[i] << fixed << setprecision(1) << endl;
+    }
+  }
+  
+  return 0;
+}
