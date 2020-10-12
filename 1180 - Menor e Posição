@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+  int n, x[1000], aux=1000, pos=0;
+
+  cin >> n;
+
+  for(int i=0; i<n; i++){
+    cin >> x[i];
+
+    if(x[i] < aux){
+      aux = x[i];
+      pos = i;
+    }
+  }
+
+  cout << "Menor valor: " << aux << "\n";
+  cout << "Posicao: " << pos << "\n";   
+  
+  return 0;
+}
